@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-1" />
+    <title>Home Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../style/index.css" />
+    <link rel="stylesheet" href="../style/style.css" />
+
+    <style type="text/css">
+      .paint-card {
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Navber srtarts -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><i class="fas fa-clinic-medical"></i>Smart Doctor App</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"
+            ><i class="fa-solid fa-bars"></i
+          ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../html/index.html"
+                ></i>Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/about.html"
+                ></i>About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/appoinment.html">Appoinment</a>
+            </li>
+
+            <li class="nav-item">
+              <div class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Dashboard</a
+                >
+                <div class="dropdown-menu m-0 nav-item "aria-labelledby="dropdownMenuButton1">
+                  <a  class="nav-link text-md-start" href="../html/doctor/docDashboard.html" class="dropdown-item"
+                    >Doctor</a
+                  >
+                  <a  class="dropdown-item nav-link text-md-start" href="../html/admin/adminDashBoard.html" class="dropdown-item"
+                    >Admin</a
+                  >
+                 
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <div class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  ><i class="fas fa-user-circle"></i>Login</a
+                >
+                <div class="dropdown-menu m-0 nav-item "aria-labelledby="dropdownMenuButton1">
+                  <a  class="nav-link text-md-start" href="../html/patientLogin.html" class="dropdown-item"
+                    >Patient</a
+                  >
+                  <a  class="nav-link text-md-start" href="../html/doctorLogin.html" class="dropdown-item"
+                    >Doctor</a
+                  >
+                  <a  class="dropdown-item nav-link text-md-start" href="../html/adminLogin.html" class="dropdown-item"
+                    >Admin</a
+                  >
+                 
+              </div>
+            </li>
+          </ul>
+
+          <!-- <form class="d-flex">
+					<div class="dropdown">
+						<button class="btn btn-light dropdown-toggle" type="button"
+							id="dropdownMenuButton1" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							<i class="fas fa-user-circle"></i> 
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+							<li><a class="dropdown-item nav-link" href="edit_profile.jsp">Edit
+									Profile</a></li>
+							<li><a class="dropdown-item" href="../doctorLogout">Logout</a></li>
+						</ul>
+					</div>
+				</form> -->
+        </div>
+      </div>
+    </nav>
+    <!-- Navber ends -->
+
+    <!-- <h1>Smart Doctor App</h1> -->
+    <!-- Slide Bar image-->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="true"
+    >
+    
+      <div class="carousel-indicators text-dark">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="../images/indexdoc1.jpg"
+            class="d-block w-100"
+            alt="..."
+            height="100px"
+          />
+          <div class="carousel-caption d-none d-md-block ">
+            <h1 class="text-light text-shadow">Smart Doctor App</h1>
+            <a class="btn fs-4 heading text-dark bg-color text-shadow box-shadow text-center rounded-pill m-3" href="../html/appoinment.html"
+              >Appoinment</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="../images/indexdoc2.jpg"
+            class="d-block w-100"
+            alt="..."
+            height="100px"
+          />
+          <div class="carousel-caption d-none d-md-block ">
+            <h1 class="text-light text-shadow">Smart Doctor App</h1>
+            <a class="btn fs-4 heading text-dark bg-color text-shadow btn-shadow text-center rounded-pill m-3 " href="../html/appoinment.html"
+              >Appoinment</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="../images/indexdoc3.jpg"
+            class="d-block w-100"
+            alt="..."
+            height="100px"
+          />
+          <div class="carousel-caption d-none d-md-block ">
+            <h1 class="text-light text-shadow">Smart Doctor App</h1>
+            <a class="btn fs-4 heading text-dark bg-color text-shadow box-shadow text-center rounded-pill m-3" href="../html/appoinment.html"
+              >Appoinment</a>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- About Start -->
+    <div class="container-fluid py-3">
+      <p class="text-center fs-2 heading">About Us</p>
+      <strong class="underline-text heading"
+        >---------- Best Medical Care for Yourself and Your Family----------</strong
+      >
+      <div class="container">
+        <div class="row gx-5">
+          <div class="col-lg-5 mb-3 mb-lg-0 mt-4" style="min-height: 300px; max-height: 550px;">
+            <div class="position-relative h-100 mt-3">
+              <img
+                class="position-absolute w-100 h-100 rounded"
+                src="../images/about.jpg"
+                style="object-fit: cover"
+              />
+            </div>
+          </div>
+          <div class="col-lg-7 mt-1 ">
+            <div class="mb-0 mt-3 text-center">
+              <h5
+                class="d-inline-block text-center text-uppercase border-bottom border-5"
+              >
+               Smart Doctor App
+              </h5>
+            </div>
+            <p class="text-align service-text">
+              Smart Doctor App is the use of medical based communication and information technology to provide clinical health care from a distance that allows patients to easily book their appointment at a particular doctor related to their health issue. 
+               Such as Dental, Injury, Metal health, Muscle strain, Obesity, Arthritis, Asthma, etc. It has been used to overcome distance barriers and to improve access to medical services that would often not be consistently available in distant rural communities. Many people are suffering from several different diseases (around 95% of the world’s population). Each week, many people from those book appointments to a nearby doctor to get the treatment. 
+               A web- based consultation system which can work on low bandwidth mobile internet connection to provide online care for rural patients. This application permits user to induce instant oversight on their health problems through a wise health care application on-line.
+            </p>
+            <div class="row g-3 pt-1 p-2">
+              <div class="col-sm-3 col-6">
+                <div class="bg-white text-center rounded-circle py-3 border-primary pt-4">
+                  <i class="fa fa-2x fa-user-md text-dark mb-1"></i>
+                  <h6 class="mb-1 heading">
+                    Qualified<small class="d-block text-dark">Doctors</small>
+                  </h6>
+                </div>
+              </div>
+              <div class="col-sm-3 col-6">
+                <div class="bg-white text-center rounded-circle  border-primary py-3 pt-4">
+                  <i class="fa fa-2x fa-procedures text-dark mb-1"></i>
+                  <h6 class="mb-1 heading">
+                    Emergency<small class="d-block text-dark"
+                      >Services</small
+                    >
+                  </h6>
+                </div>
+              </div>
+              <div class="col-sm-3 col-6">
+                <div class="bg-white text-center rounded-circle border-primary py-3 pt-4">
+                  <i class="fa fa-2x fa-microscope text-dark mb-1"></i>
+                  <h6 class="mb-1 heading">
+                    Accurate<small class="d-block text-dark">Testing</small>
+                  </h6>
+                </div>
+              </div>
+              <div class="col-sm-3 col-6">
+                <div class="bg-white text-center rounded-circle border-primary py-3 pt-4">
+                  <i class="fa fa-2x fa-ambulance text-dark mb-1"></i>
+                  <h6 class="mb-1 heading">
+                    Medicine<small class="d-block text-dark">Delivery</small>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+
+    <hr />
+    <!-- key featues  starts -->
+    <div class="container p-3">
+      <p class="text-center fs-2 heading">Key Features</p>
+      <strong class="underline-text heading"
+        >---------- Services we are providing in our system----------</strong
+      >
+      <div class="row gx-5 mt-3">
+        <div class="col-md-8 m-2">
+          <div class="row gx-2">
+            <div class="col-md-6 mt-2">
+              <div class="card service-card style="min-width: 150px; "">
+                <div class="card-body" >
+                  <div class="service-icon mb-1">
+                    <i class="fa fa-2x fa-solid fa-shield-virus text-dark mt-2"></i>
+                </div>
+                  <p class="fs-6 heading text-dark">100% Safety</p>
+                  <p class="service-text text-align">
+                    Digital records and limited access to private and confidential information ensure high security of hospital staff. Also, maintain records of patients, visitors, incidents, and site rounds through the system.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mt-2">
+              <div class="card service-card">
+                <div class="card-body">
+                  <div class="service-icon mb-1">
+                    <i class="fa fa-2x fa-sharp fa-solid fa-notes-medical text-dark mt-2"></i>
+                </div>
+                  <p class="fs-6 heading text-dark">Fast Service</p>
+                  <p class="service-text text-align">
+                    As it's an online platform mediacl service , we are providing the fastest treatment and responce to aour patients and users. Here, patients can book an appoinment at any time and can get their appointment to their convenient time.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mt-2">
+              <div class="card service-card">
+                <div class="card-body">
+                  <div class="service-icon mb-1 mt-2">
+                    <i class="fa fa-2x fa-stethoscope text-dark"></i>
+                  </div>
+                  <p class="fs-6 heading ">Friendly Doctors</p>
+                  <p class="service-text text-align">
+                    Being a good communicator is critical not only for working with patients but also for relaying information across the health care system. We provide friendly and best doctor for treatment.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mt-2">
+              <div class="card service-card">
+                <div class="card-body">
+                  <div class="service-icon mb-1 mt-2">
+                    <i class="fa fa-2x fa-pills text-dark"></i>
+                </div>
+                  <p class="fs-6 heading">Medicine Delivery</p>
+                  <p class="service-text text-align">
+                    Medicine is that the help given to a person suffering a sudden illness or injury and push recovery. We also provide home delivery for medicines.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 m-2 gx-5 key-features-img ">
+          <img alt="" src="../images/keyFeaturs.jpg" class="" />
+        </div>
+      </div>
+    </div>
+
+    <hr />
+     <!-- key featues  Ends -->
+   
+    <!-- our team starts-->
+
+    <div class="container p-3">
+      <p class="text-center fs-2 heading">Our Doctors</p>
+      <strong class="underline-text"
+        >---------- Qualified Healthcare Professionals----------</strong>
+
+      <div class="row gx-2">
+        <div class="col-md-3 mt-3 team-list">
+          <div class="card service-card ">
+            <div class="card-body text-center team-card service-text">
+              <img src="../images/doc1.jpg"/>
+              <div class="team-text-div g-3 m-3">
+                <p class="fw-bold fs-6 doc-name">Samuani Simi</p>
+                <p class="mb-1">(CEO & Chairman)</p>
+                <h6 class="specialist">Medicine & Surgon</h6>  
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 mt-3 team-list">
+          <div class="card service-card ">
+            <div class="card-body text-center team-card service-text">
+              <img src="../images/doc2.jpg"/>
+              <div class="team-text-div g-3 m-3">
+                <p class="fw-bold fs-6 doc-name">Dr. Niuise Paule</p>
+                <p class="mb-1">(Chief Doctor)</p>
+                <h6 class="specialist">Cardiologist</h6>  
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 mt-3 team-list">
+          <div class="card service-card">
+            <div class="card-body text-center team-card service-text">
+              <img src="../images/doc3.jpg"/>
+              <div class="team-text-div g-3 m-3">
+                <p class="fw-bold fs-6 doc-name">Dr. Nick</p>
+                <p class="mb-1">(Chief Doctor)</p>
+                <h6 class="specialist">Medicine & Psychatry</h6>  
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 mt-3 team-list">
+          <div class="card service-card">
+            <div class="card-body text-center team-card service-text">
+              <img src="../images/doc4.jpg" />
+              <div class="team-text-div g-3 m-3">
+                <p class="fw-bold fs-6 doc-name">Dr. Mathue Samuel</p>
+                <p class="mb-1">(Chief Doctor)</p>
+                <h6 class="specialist">Darmatologist</h6>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- our team ends-->
+    <hr>
+     <!-- Search Start -->
+     <div class="container-fluid my-1 py-1">
+      <div class="container py-3">
+        <div class="text-center mx-auto mb-3" style="max-width: 700px">
+          <h6
+            class="d-inline-block text-shadow heading text-uppercase border-bottom border-5"
+          >
+            Find A Doctor
+          </h6>
+          <h3 class="display-7 mb-2">Find A Healthcare Professionals</h3>
+          <h6 class="display-7 fw-normal service-text">
+            MediFind helps you find the best family doctor, primary care doctor, or specialist who has experience with your specific condition.
+          </h6>
+        </div>
+
+        <div class="mx-auto" style="width: 100%; max-width: 700px; ">
+          <div class="input-group">
+            <select
+              class="form-select border-primary w-25"
+              style="height: 60px; font-size: 18px;"
+            >
+              <option selected >Department</option>
+              <option value="1">Department1</option>
+              <option value="2">Department2</option>
+              <option value="3">Department3</option>
+            </select>
+            <input
+              type="text"
+              class="form-control border-primary w-50"
+              placeholder="Keyword"
+              style="font-size: 20px;"
+            />
+            <button class="btn btn-dark border-0 w-25 ">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Search End -->    
+
+
+    <!-- Footer -->
+    <div class="footer-container">
+
+      <div class="container-fluid text-light mt-5 py-4">
+        <div class="container py-3">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="d-inline-block text-light text-primary text-uppercase border-bottom border-3 border-secondary mb-1">Get In Touch</h4>
+                    <p class="mb-4 text-light"><h4 class="text-light">We are here,</h4><p class="text-light">our door is always (24X7) open for you.</p> </p>
+                    <p class="mb-2 text-light"><i class="fa fa-map-marker-alt text-primary me-3 text-light"></i>Location, Dhaka, Bangladesh</p>
+                    <p class="mb-2 text-light"><i class="fa fa-envelope text-primary me-3 text-light"></i>info@example.com</p>
+                    <p class="mb-0 text-light"><i class="fa fa-phone-alt text-primary me-3 text-light"></i>+012 345 67890</p>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="d-inline-block text-light text-primary text-uppercase border-bottom border-3 border-secondary mb-4">Quick Links</h4>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#">Home</a>
+                        <a class="text-light mb-2" href="../html/about.html">About Us</a>
+                        <a class="text-light mb-2" href="../html/services.html">Services</a>
+                        <a class="text-light mb-2" href="../html/appoinment.html">Appoinment</a>
+                        <a class="text-light" href="../html/contact.html">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 p-3">
+                    <h4 class="d-inline-block text-primary text-uppercase border-bottom text-light border-3 border-secondary mb-4 m-4">Follow Us</h4>
+                    <div class="d-flex">
+                        <a class="btn  bg-light btn-primary btn-lg-square rounded-circle me-3" href=""><i class="text-center fab fa-twitter "></i></a>
+                        <a class="btn  bg-light btn-primary btn-lg-square rounded-circle me-3" href=""><i class="fab fa-facebook-f "></i></a>
+                        <a class="btn  bg-light btn-primary btn-lg-square rounded-circle me-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn  bg-light btn-primary btn-lg-square rounded-circle " href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-light border-top border-secondary py-2">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-light mb-md-0">&copy; <a class="text-primary text-light" href="#">Your Site Name</a>. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0 text-light ">Designed by ★★★ Farjana Yeasmin ★★★</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+     <!-- Footer End -->
+
+      <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-white btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
