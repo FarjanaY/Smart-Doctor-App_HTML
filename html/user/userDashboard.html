@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-1" />
+    <title>User Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="/style/index.css" />
+
+
+  </head>
+  <body>
+     <!-- Navber srtarts -->
+     <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/html/index.html"
+            ><i class="fas fa-clinic-medical"></i>Smart Doctor App</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"
+              ><i class="fa-solid fa-bars"></i
+            ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/html/index.html"
+                  ></i>Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../user/userDashboard.html"
+                  ></i>Dashboard</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../user/userAppoinment.html">Appoinment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../user/viewUserAppoinment.html">Appoinment List</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="../user/userProfile.html">User</a>
+                </li>
+  
+              <li class="nav-item">
+                <div class="nav-item dropdown">
+                  <a
+                    href="#"
+                    class="nav-link "
+                    data-bs-toggle="dropdown"
+                    ><i class="fas fa-user-circle"></i>User</a
+                  >
+                  <!-- <div class="dropdown-menu nav-item "aria-labelledby="dropdownMenuButton1" style="width: 2rem;">
+                    <a  class="dropdown-item nav-link text-md-start " href="/html/patientLogin.html" class="dropdown-item"
+                      >Patient</a
+                    >
+                    <a  class="dropdown-item nav-link text-md-start " href="/html/doctorLogin.html" class="dropdown-item"
+                    >Doctor</a
+                    >
+                    <a  class="dropdown-item nav-link text-md-start " href="/html/adminLogin.html" class="dropdown-item"
+                    >Admin</a
+                    >  
+                  </div> -->
+                </div>
+              </li>
+            </ul>
+  
+            <!-- <form class="d-flex">
+                      <div class="dropdown">
+                          <button class="btn btn-light dropdown-toggle" type="button"
+                              id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fas fa-user-circle"></i> 
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item nav-link" href="edit_profile.jsp">Edit
+                                      Profile</a></li>
+                              <li><a class="dropdown-item" href="../doctorLogout">Logout</a></li>
+                          </ul>
+                      </div>
+                  </form> -->
+          </div>
+        </div>
+      </nav>
+      <!-- Navber ends -->
+
+    <!-- Admin dashboard starts -->
+	<div class="container p-5 ">
+
+       
+		<p class="text-center fs-3 nav-link">User Dashboard</p>
+			<!-- <p class="fs-3 text-center text-danger">${errorMsg}</p>
+			<div class="fs-3 text-center text-success" role="alert">${succMsg}</div> -->
+		<div class="row">
+            
+            <div class="col-md-4">
+              <a href="../user/userAppoinment.html" class="text-light">
+                  <div class="card paint-card">
+                      <div class="card-body text-center text-success">
+                          <i class="far fa-calendar-check fa-3x"></i><br>
+                          <p class="fs-4 text-center">
+                            Appoinment  <br>
+                          </p>
+                      </div>
+                  </div>
+              </a>
+            </div>
+
+
+            <div class="col-md-4">
+                <a href="../user/viewUserAppoinment.html" class="text-light">
+                    <div class="card paint-card">
+                        <div class="card-body text-center text-success">
+                            <i class="far fa-calendar-check fa-3x"></i><br>
+                            <p class="fs-4 text-center">
+                                Total Appointment <br>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+              </div>
+
+            <div class="col-md-4">
+				      <a href="../user/userProfile.html" class="text-light">
+                    <div class="card paint-card">
+                        <div class="card-body text-center text-success">
+                            <i class="fas fa-user-circle fa-3x"></i><br>
+                            <p class="fs-4 text-center">
+                              Patient Profile<br>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+			</div>
+
+		</div>
+	</div>
+
+
+
+    <!-- Admin dashboard ends -->
+
+    <!-- Footer -->
+    <div class="footer-container">
+
+      <div class="container-fluid text-light mt-5 py-4">
+        <div class="container py-3">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="d-inline-block text-light text-primary text-uppercase border-bottom border-3 border-secondary mb-1">Get In Touch</h4>
+                    <p class="mb-4 text-light"><h4 class="text-light">We are here,</h4><p class="text-light">our door is always (24X7) open for you.</p> </p>
+                    <p class="mb-2 text-light"><i class="fa fa-map-marker-alt text-primary me-3 text-light"></i>Location, Dhaka, Bangladesh</p>
+                    <p class="mb-2 text-light"><i class="fa fa-envelope text-primary me-3 text-light"></i>info@example.com</p>
+                    <p class="mb-0 text-light"><i class="fa fa-phone-alt text-primary me-3 text-light"></i>+012 345 67890</p>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="d-inline-block text-light text-primary text-uppercase border-bottom border-3 border-secondary mb-4">Quick Links</h4>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#">Home</a>
+                        <a class="text-light mb-2" href="../html/about.html">About Us</a>
+                        <a class="text-light mb-2" href="../html/services.html">Services</a>
+                        <a class="text-light mb-2" href="../html/appoinment.html">Appoinment</a>
+                        <a class="text-light" href="../html/contact.html">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 p-3">
+                    <h4 class="d-inline-block text-primary text-uppercase border-bottom text-light border-3 border-secondary mb-4 m-4">Follow Us</h4>
+                    <div class="d-flex">
+                        <a class="btn  bg-light btn-primary btn-lg-square rounded-circle me-3" href=""><i class="text-center fab fa-twitter "></i></a>
+                        <a class="btn  bg-light btn-primary btn-lg-square rounded-circle me-3" href=""><i class="fab fa-facebook-f "></i></a>
+                        <a class="btn  bg-light btn-primary btn-lg-square rounded-circle me-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn  bg-light btn-primary btn-lg-square rounded-circle " href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-light border-top border-secondary py-2">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-light mb-md-0">&copy; <a class="text-primary text-light" href="#">Your Site Name</a>. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0 text-light ">Designed by ★★★ Farjana Yeasmin ★★★</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+     <!-- Footer End -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
